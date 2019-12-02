@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "f337205a-e320-489e-95f2-2b389e33e3ba",
+		"name": "Blockchain project 1: own private blockchain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create genesis block",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request ownership",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit star",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"address\": \"1L4rSXkuUe9uLAzjFo3W7erYgPYmJRboMg\",\n\t\"signature\": \"HySSed/KAexLejDmMgsGoeN1mKiPPqhpKT9bJnML5FwnL4JtsJvYbHLiJOYTZCVuJQmxjvzoqXamL/CdKNcS4tw=\",\n\t\"message\": \"1L4rSXkuUe9uLAzjFo3W7erYgPYmJRboMg:1575298081:starRegistry\",\n\t\"star\": {\n\t\t\"dec\": \"68° 52' 56.9\",\n\t\t\"ra\": \"16h 29m 1.0s\",\n\t\t\"story\": \"Sirius\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/submitstar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"submitstar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckStarsOwned",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate blockchain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
